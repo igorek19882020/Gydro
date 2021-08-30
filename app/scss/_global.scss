@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  color: #2f3035;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+//   .container-fluid{
+//     min-width: 100%;
+//     margin:0 auto;
+//     padding: 0px 30px;
+//   }
+
+//   @media(max-width: 720px){
+//     .container-fluid{
+//       padding: 0px 15px;
+//     }
+//   }
