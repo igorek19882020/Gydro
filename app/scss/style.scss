@@ -1,6 +1,11 @@
 @import "global";
 @import "vars";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
 //start header
+// .header__bottom {
+//   margin-bottom: 80px;
+// }
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -74,12 +79,12 @@
     transition: all 0.3s;
     @include f400;
     padding: 15px 0px 14px;
+    position: relative;
   }
   &__link::before {
     content: "";
     position: absolute;
     width: 0;
-    height: 0;
     background-color: #1c62cd;
     height: 3px;
     bottom: 0;
@@ -99,3 +104,219 @@
   }
 }
 //end header
+// start slider
+.banner__section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__section-slider {
+  max-width: 870px;
+}
+
+.banner__section-slider-btn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+  z-index: 5;
+  cursor: pointer;
+}
+.banner__section-slider-btnprev {
+  left: 20px;
+}
+
+.banner__section-slider-btnnext {
+  right: 20px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+  margin-right: 9px;
+}
+
+.slick-dots button {
+  position: absolute;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slick-active button {
+  background-color: white;
+}
+
+.sale__item {
+  max-width: 265px;
+  max-height: 397px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sale__item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sale__item-info {
+  background-color: #1c62cd;
+  color: #fff;
+  text-transform: uppercase;
+
+  padding: 8px 20px;
+  font-size: 12px;
+  line-height: 15px;
+}
+.sale__item-price {
+  text-align: right;
+}
+.price {
+  font-family: "Barlow", sans-serif;
+  position: relative;
+}
+.sale__item-price-new {
+  font-weight: 700;
+  font-size: 27px;
+  color: #1c62cd;
+  line-height: 32px;
+  margin-right: 6px;
+  padding-right: 20px;
+}
+.sale__item-price-new::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons-price.svg);
+  width: 15px;
+  height: 18px;
+  right: 0;
+  bottom: 6px;
+}
+
+.sale__item-price-old {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c4c4c4;
+  line-height: 17px;
+  margin-right: 15px;
+  background-image: url(../images/old-line.svg);
+  display: inline-block;
+  padding: 2px 5px;
+  background-repeat: no-repeat;
+}
+
+.sale__item-price-old::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons-price-old.svg);
+  width: 8px;
+  height: 10px;
+  right: -10px;
+  top: 5px;
+  color: #c4c4c4;
+}
+.sale__item-title {
+  @include f700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.sale__item-footer {
+  background-color: #f0f0f4;
+  padding: 25px 20px;
+  font-size: 18px;
+  line-height: 22px;
+  @include f400;
+}
+.sale__item-footer span {
+  display: block;
+  font-family: "Barlow";
+  font-weight: 700;
+  color: #1c62cd;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner__section-slider-img {
+  object-fit: cover;
+  min-height: 400px;
+}
+.sale__item-img {
+  object-fit: contain;
+}
+//end slider
+
+//start section search
+
+.search__tabs-item {
+  padding: 12px 26px 12px;
+  margin-bottom: 25px;
+}
+.search__tabs-item-active {
+  border-radius: 5px;
+  background: #f0f0f4;
+  @include f700;
+}
+.search__content-item{
+  display: none;
+}
+.search__content-item-active{
+  display: block;
+}
+
+
+.search__content-form {
+  display: flex;
+}
+
+.search__content-input {
+  border: none;
+  padding: 15px 20px;
+  @include f400;
+  background: #f0f0f4;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.search__content-input::placeholder {
+  color: #656464;
+}
+
+.search__content-btn {
+  background: #1c62cd;
+  color: #ffffff;
+  padding: 17px 40px;
+  @include f700;
+  line-height: 17px;
+  font-size: 14px;
+  border-radius: 3px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  margin-left: -3px;
+  
+}
+
+//end section search

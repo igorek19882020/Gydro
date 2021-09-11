@@ -1,13 +1,13 @@
-const { src, dest, watch, parallel,series } = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss          = require('gulp-sass');
-const concat        = require('gulp-concat')
-const browserSync   = require('browser-sync').create();
-const uglify        = require('gulp-uglify-es').default;
-const autoprefixer  = require('gulp-autoprefixer');
-const autoPrefixer  = require('gulp-autoprefixer');
-const imagemin      = require('gulp-imagemin');
-const del           = require('del');
+const scss = require('gulp-sass');
+const concat = require('gulp-concat')
+const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify-es').default;
+const autoprefixer = require('gulp-autoprefixer');
+const autoPrefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+const del = require('del');
 
 function browsersync() {
     browserSync.init({
@@ -17,7 +17,7 @@ function browsersync() {
     });
 }
 
-function cleanDist(){
+function cleanDist() {
     return del('dist')
 }
 
@@ -40,8 +40,13 @@ function images() {
 
 function scripts() {
     return src([
+
         'node_modules/jquery/dist/jquery.js',
         'app/js/main.js',
+        // 'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/slick-carousel/slick/slick.js'
+
+
         // 'app/js/bootstrap.min.js'
     ])
         .pipe(concat('main.min.js'))
@@ -50,10 +55,10 @@ function scripts() {
         .pipe(browserSync.stream())
 }
 
-
-
 function styles() {
-    return src('app/scss/style.scss')
+    return src(
+        'app/scss/style.scss'
+    )
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoPrefixer({
@@ -85,7 +90,7 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 
-exports.build = series(cleanDist,images,build);
+exports.build = series(cleanDist, images, build);
 
 exports.default = parallel(styles, scripts, browsersync, watching);
 
