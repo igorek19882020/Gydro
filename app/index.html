@@ -177,25 +177,25 @@
     <div class="container">
       <div class="search__inner">
         <div class="search__tabs">
-          <a class="search__tabs-item search__tabs-item-active" href="#tab-1">Поиск по номеру</a>
-          <a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
-          <a class="search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+          <a class="tab search__tabs-item tab-active" href="#tab-1">Поиск по номеру</a>
+          <a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
+          <a class="tab search__tabs-item" href="#tab-3">Поиск по названию товара</a>
 
         </div>
         <div class="search__content">
-          <div id='tab-1' class="search__content-item search__content-item-active">
+          <div id='tab-1' class="tabs__content search__content-item tabs__content-active">
             <form class="search__content-form" action="">
               <input class="search__content-input" type="text" placeholder="Введите номер ">
               <button class="search__content-btn" type="submit">искать</button>
             </form>
           </div>
-          <div id='tab-2' class="search__content-item">
+          <div id='tab-2' class="tabs__content search__content-item">
             <form class="search__content-form" action="">
               <input class="search__content-input" type="text" placeholder="Введите марку ">
               <button class="search__content-btn" type="submit">искать</button>
             </form>
           </div>
-          <div id='tab-3' class="search__content-item">
+          <div id='tab-3' class="tabs__content search__content-item">
             <form class="search__content-form" action="">
               <input class="search__content-input" type="text" placeholder="Введите назвние товара">
               <button class="search__content-btn" type="submit">искать</button>
@@ -272,6 +272,57 @@
       </div>
     </div>
   </section>
+  <section class="products">
+    <div class="container">
+      <div class="products__inner">
+        <div class="tabs__wrapper">
+          <div class="tabs products__tabs">
+            <a class="tab tab-active products__tab" href="#"></a>
+            <a class="tab products__tab" href="#">запчасти</a>
+            <a class="tab products__tab" href="#">моторы</a>
+            <a class="tab products__tab" href="#">шины </a>
+            <a class="tab products__tab" href="#">электроника</a>
+            <a class="tab products__tab" href="#">инструменты</a>
+            <a class="tab products__tab" href="#">аксессуары </a>
+          </div>
+          <div class="tabs__container products__container">
+            <div class="tabs__content products__content tabs__content-active"></div>
+
+
+
+
+            <div class="tabs__content products__content ">
+              <div class="product__slider">
+                <div class="product__slider-item">
+                  <div class="product__item-wrapper">
+                    <button class="product__item-favourite"></button>
+                    <button class="product__item-basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product__item" href="#">
+
+                      <img class="product__item-img" src="images/content/product-1.png" alt="">
+                      <h4 class="product__item-title">Водонепроницаемый Рюкзак</h4>
+                      <p class="price product__item-price">9 800 ₽</p>
+                    </a>
+                  </div>
+
+                </div> 
+              </div>
+            </div>
+            <div class="tabs__content products__content "></div>
+            <div class="tabs__content products__content "></div>
+            <div class="tabs__content products__content "></div>
+            <div class="tabs__content products__content "></div>
+            <div class="tabs__content products__content "></div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
 
 
 
@@ -284,3 +335,12 @@
 </body>
 
 </html>
+
+<!-- <div class="tabs__wrapper">
+  <div class="tabs">
+    <a class="tab tab-active" href="#"></a>
+  </div>
+  <div class="tabs__container">
+    <div class="tabs__content"></div>
+  </div>
+</div> -->

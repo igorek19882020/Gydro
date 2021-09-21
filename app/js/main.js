@@ -5,18 +5,23 @@ $(function () {
         nextArrow: '<button class= "banner__section-slider-btn banner__section-slider-btnnext " > <img src="images/right-arrow.svg" alt=""></button>'
     });
 
-    $('.search__tabs-item').on('click', function (e) {
+    $('.tab').on('click', function (e) {
         e.preventDefault();
 
-        $('.search__tabs-item').removeClass('search__tabs-item-active');
-        $('.search__content-item').removeClass('search__content-item-active');
-        
-        $(this).addClass('search__tabs-item-active');
-        $($(this).attr('href')).addClass('search__content-item-active');
+        $('.tab').removeClass('tab-active');
+        $('.tabs__content').removeClass('tabs__content-active');
+
+        $(this).addClass('tab-active');
+        $($(this).attr('href')).addClass('tabs__content-active');
     });
 
+$(".product__item-favourite").on('click', function(){
+    $(".product__item-favourite").toggleClass('product__item-favourite--active')
+})
 
 
-    
+
+
 
 });
+
