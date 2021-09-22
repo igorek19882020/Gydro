@@ -15,10 +15,14 @@ $(function () {
         $($(this).attr('href')).addClass('tabs__content-active');
     });
 
-$(".product__item-favourite").on('click', function(){
-    $(".product__item-favourite").toggleClass('product__item-favourite--active')
-})
+    $(".product__item-favourite").on('click', function () {
+        $(".product__item-favourite").toggleClass('product__item-favourite--active')
+    })
 
+    $('.product__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1
+    })
 
 
 
