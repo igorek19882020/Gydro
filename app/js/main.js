@@ -21,11 +21,12 @@ $(function () {
 
     $('.product__slider').slick({
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: '<button class="product__slider-slider-btn product__slider-slider-btnprev"><img src="images/left-arrow-black.svg"" alt=""></button>',
+        nextArrow: '<button class= "product__slider-slider-btn product__slider-slider-btnnext " > <img src="images/right-arrow-black.svg" alt=""></button>'
+
     })
 
 
 
-
 });
-
