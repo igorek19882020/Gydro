@@ -6,12 +6,28 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+body{
+  color: #2F3035;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
 a {
   display: inline-block;
-  text-decoration: none;
-  color: black;
+  text-decoration: none ;
+  color:black;
+ 
 }
+
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+ color: #2F3035;
+  text-decoration:none; 
+ 
+}
+
+
+
 ul,
 li {
   margin: 0;
@@ -29,12 +45,7 @@ h6 {
 p{
   margin: 0;
 }
-body {
-  color: #2f3035;
-  font-family: "SFProDisplay-Regular", sans-serif;
-  font-weight: 400;
-  line-height: 24px;
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -43,14 +54,6 @@ body {
 .page-section{ 
   margin-bottom: 80px;
 }
-//   .container-fluid{
-//     min-width: 100%;
-//     margin:0 auto;
-//     padding: 0px 30px;
-//   }
+   
 
-//   @media(max-width: 720px){
-//     .container-fluid{
-//       padding: 0px 15px;
-//     }
-//   }
+

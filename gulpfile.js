@@ -43,11 +43,11 @@ function scripts() {
 
         'node_modules/jquery/dist/jquery.js',
         'app/js/main.js',
-        // 'node_modules/slick-carousel/slick/slick.min.js',
+        
         'node_modules/slick-carousel/slick/slick.js'
 
 
-        // 'app/js/bootstrap.min.js'
+        
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
