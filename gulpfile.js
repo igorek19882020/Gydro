@@ -57,6 +57,7 @@ function styles() {
   return src([
      "app/scss/style.scss",
      "node_modules/ion.rangeSlider-master/css/ion.rangeSlider.css",
+    //  "app/scss/_media.scss"
     // "node_modules/rateyo/lib/iife/rateyo.css"
    
   ])
