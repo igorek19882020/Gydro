@@ -3,7 +3,6 @@
 @import "fonts";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 
-
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,7 @@
   display: flex;
   align-items: center;
 }
-.menu__btn{
+.menu__btn {
   display: none;
 }
 .header__adress {
@@ -40,43 +39,36 @@
   top: -10px;
 }
 
-
-.menu-mobile__list{
+.menu-mobile__list {
   width: 243px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   transform: translateX(-104%);
-  transition: all .3s;
+  transition: all 0.3s;
   position: absolute;
   z-index: 10;
   background-color: white;
-
-
 }
-.menu__mobile-linewrapper{
+.menu__mobile-linewrapper {
   display: none;
 }
 
-.menu-mobile__list--active{
+.menu-mobile__list--active {
   transform: translateX(0);
 }
-.menu-mobile__item{
+.menu-mobile__item {
   position: relative;
-  border-bottom:  1px solid rgba(0, 0, 0, 0.1);;
- 
-} 
-.menu-mobile__link{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu-mobile__link {
   display: block;
   padding-left: 53px;
- padding-top: 36px;
-
+  padding-top: 36px;
 }
-.menu-mobile__img{
+.menu-mobile__img {
   position: absolute;
   left: 11px;
   bottom: 0;
 }
-
-
 
 .user-list {
   margin-right: 10px;
@@ -290,6 +282,7 @@
 }
 .sale__item-img {
   object-fit: contain;
+  max-height: 175px;
 }
 //end slider
 
@@ -322,6 +315,7 @@
   line-height: 20px;
   border-radius: 3px;
   width: 100%;
+  outline:none;
 }
 
 .search__content-input::placeholder {
@@ -1321,7 +1315,7 @@ button.catalog__filter-btnline {
   display: inline-block;
 }
 
-.card__tabs{
+.card__tabs {
   margin-bottom: 100px;
 }
 .card__tabs-box {
@@ -1387,9 +1381,9 @@ button.catalog__filter-btnline {
   width: 157px;
   margin-right: 96px;
 }
-.workhours{
-display: flex;
-justify-content: space-between;
+.workhours {
+  display: flex;
+  justify-content: space-between;
 }
 .card__list-available {
   width: 140px;
@@ -1402,7 +1396,7 @@ justify-content: space-between;
   margin-left: auto;
 }
 .card__list-btn button {
-    font-size: 13px;
+  font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.12em;
   color: #ffffff;

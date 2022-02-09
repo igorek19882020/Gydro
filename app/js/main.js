@@ -5,6 +5,14 @@ $(function () {
       '<button class="banner__section-slider-btn banner__section-slider-btnprev"><img src="images/left-arrow.svg"" alt=""></button>',
     nextArrow:
       '<button class= "banner__section-slider-btn banner__section-slider-btnnext " > <img src="images/right-arrow.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".tab").on("click", function (e) {
@@ -35,8 +43,6 @@ $(function () {
   $(".filter-style").styler();
 
   $(".filter__item-drop, .filter__extra").on("click", function () {
-    
-
     $(this).toggleClass("filter__item-drop--active");
     $(this).next().slideToggle(200);
     e.preventDefault();
@@ -44,7 +50,7 @@ $(function () {
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 100000,
-    max: 500000
+    max: 500000,
   });
 
   $(".catalog__filter-btngrid").on("click", function () {
@@ -63,13 +69,9 @@ $(function () {
     rating: 3.6,
     spacing: "7px",
     ratedFill: "#1c62cd",
-    normalFill:"#c4c4c4"
-
+    normalFill: "#c4c4c4",
   });
-$('.menu__btn').on('click', function(){
-  $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
-});
-
-
-
+  $(".menu__btn").on("click", function () {
+    $(".menu-mobile__list").toggleClass("menu-mobile__list--active");
+  });
 });

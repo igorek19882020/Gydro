@@ -47,7 +47,6 @@
         font-size: 20px;
         line-height: 24px;
         background-color: #f0f0f4;
-        overflow-x: scroll;
     }
     .menu__mobile-line {
         width: 450px;
@@ -59,7 +58,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .banner__section-slider-item{
+    .banner__section-slider-item {
         text-align: center;
     }
     .banner__section-slider {
@@ -67,15 +66,16 @@
     }
     .banner__section-slider-img {
         max-width: 100%;
-       
         margin-bottom: 25px;
     }
-   
-    .banner__section-slider-btn {
-        display: none;
+
+    .mobile-overflow {
+        width: 1000px;
+    }
+    .tabs__wrapper {
+        overflow-x: scroll;
     }
 }
-// !!!!!!!!!!!!!!!!!!!!!!!!
 
 @media (max-width: 640px) {
     .header__adress {
@@ -84,12 +84,33 @@
     .banner__section-slider-img {
         min-height: 200px;
     }
-    .banner__section .container{
+    .banner__section .container {
         padding: 0;
     }
+    .search__content-form {
+        position: relative;
+    }
+    .search__content-btn {
+        padding: 0px 0px;
+        line-height: 0px;
+        font-size: 0px;
+        background: url("../images/search.svg");
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 8px;
+        top: 13px;
+    }
+    .search__content-input {
+        height: 50px;
+        padding-right: 50px;
+        outline: none;
+    }
 }
-@media (max-width: 440px){
-    .banner__section-slider-img{
-       min-height: 160px; 
+@media (max-width: 440px) {
+    .banner__section-slider-img {
+        min-height: 160px;
     }
 }
