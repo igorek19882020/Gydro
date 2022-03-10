@@ -1,3 +1,5 @@
+// const { on } = require("gulp");
+
 $(function () {
   $(".banner__section-slider").slick({
     dots: true,
@@ -15,17 +17,98 @@ $(function () {
     ],
   });
 
-  $(".tab").on("click", function (e) {
+
+
+
+
+
+ 
+
+  $(".card__tab").on("click", function (e) {
     e.preventDefault();
 
     $($(this).siblings()).removeClass("tab-active");
-    $($(this).parent().siblings().find("div")).removeClass(
-      "tabs__content-active"
-    );
-
+    $($(this).parent().parent().siblings().find("div")).removeClass("tabs__content-active");
+    
     $(this).addClass("tab-active");
-    $($(this).attr("href")).addClass("tabs__content-active");
+    // $($(this).parent().parent().siblings().find("div")).addClass("tabs__content-active");
+     
+    // $($(this).parent().siblings().find("div")).addClass("tabs__content-active");
+  
+  //  $(this).addClass("tabs__content-active");
+  $($(this).attr("href")).addClass("tabs__content-active");
+ 
   });
+
+
+
+  
+  
+
+///// Здесь остановился!!!!!вверх
+
+
+
+
+$(".tab").on("click", function (e) {
+  e.preventDefault();
+
+  $($(this).siblings()).removeClass("tab-active");
+  $($(this).parent().parent().find("div")).removeClass("tabs__content-active");
+  
+  $(this).addClass("tab-active");
+   
+$($(this).attr("href")).addClass("tabs__content-active");
+   
+ 
+
+});
+
+
+
+  
+  $(".search__tabs-item").on("click", function (e) {
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass("tab-active");
+    $($(this).parent().parent().siblings().find("div")).removeClass("tabs__content-active");
+    
+    $(this).addClass("tab-active");
+     
+  $($(this).attr("href")).addClass("tabs__content-active");
+     
+   
+ 
+  });
+
+
+
+  $(".products__tab").on("click", function (e) {
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass("tab-active");
+    $($(this).parent().parent().siblings().find("div")).removeClass("tabs__content-active");
+    
+    $(this).addClass("tab-active");
+     
+  $($(this).attr("href")).addClass("tabs__content-active");
+     
+   
+ 
+  });
+
+  
+ 
+
+// $('.search__tabs-item').on('click',function(e){
+//   e.preventDefault();
+//   $('.search__tabs-item').removeClass('tab-active');
+//   $('.search__content-item').removeClass('tabs__content-active');
+//   $(this).addClass('tab-active');
+//    $($(this).attr("href")).addClass("tabs__content-active");
+// })
+
+
 
   $(".product__item-favourite").on("click", function () {
     $(this).toggleClass("product__item-favourite--active");
@@ -107,4 +190,21 @@ $(function () {
   $(".menu__btn").on("click", function () {
     $(".menu-mobile__list").toggleClass("menu-mobile__list--active");
   });
+
+$('.footer__topdrop').on('click',function(){
+  $(this).next().slideToggle();
+  $(this).toggleClass('footer__topdrop-active');
+})
+
+$('.aside__btn').on('click',function(){
+    $(this).next().slideToggle();
+    e.preventDefault;
+  
+})
+
+
+
+
+
 });
+

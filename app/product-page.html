@@ -129,24 +129,20 @@
 
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__list-item">
-          <a href="#">
-            Главная</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <a href="#">Гидроциклы</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <span href="#">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-        </li>
-      </ul>
-
-
-
+      <div class="breadcrumbs__inner">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="#">
+              Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="#">Гидроциклы</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-
+  
   <section class="product-card">
     <div class="container">
       <div class="product-card__inner">
@@ -221,115 +217,119 @@
     </div>
   </section>
   <section class="card__tabs">
+
     <div class="container">
 
       <div class="tabs__wrapper">
+
         <div class="tabs card__tabs-box">
-          <a class="tab card__tab " href="product-card__tabs-1">О товаре</a>
-          <a class="tab card__tab " href="product-card__tabs-2">Характеристики</a>
-          <a class="tab card__tab " href="product-card__tabs-3">Отзывы </a>
+          <a class="tab card__tab" href="product-card__tabs-1">О товаре</a>
+          <a class="tab card__tab" href="product-card__tabs-2">Характеристики</a>
+          <a class="tab card__tab" href="product-card__tabs-3">Отзывы </a>
           <a class="tab card__tab tab-active" href="product-card__tabs-4">Самовывоз</a>
-          <a class="tab card__tab " href="product-card__tabs-5">Доставка</a>
-          <a class="tab card__tab " href="product-card__tabs-6">Cервис</a>
-          <a class="tab  card__tab" href="product-card__tabs-7">Гарантия</a>
+          <a class="tab card__tab" href="product-card__tabs-5">Доставка</a>
+          <a class="tab card__tab" href="product-card__tabs-6">Cервис</a>
+          <a class="tab card__tab" href="product-card__tabs-7">Гарантия</a>
         </div>
+
         <div class="tabs__container">
-          <div id="product-card__tabs-1" class="card__tab-content  tabs__content ">content</div>
-          <div id="product-card__tabs-2" class="card__tab-content tabs__content ">content</div>
-          <div id="product-card__tabs-3" class="card__tab-content tabs__content ">content</div>
+          <div id="product-card__tabs-1" class="card__tab-content tabs__content">content1</div>
+          <div id="product-card__tabs-2" class="card__tab-content tabs__content">content2</div>
+          <div id="product-card__tabs-3" class="card__tab-content tabs__content">content3</div>
           <div id="product-card__tabs-4" class="card__tab-content tabs__content tabs__content-active">
             <form>
               <div class="card__top-line">
                 <label class="card__label-search" for="">Магазин
                   <input class="card__input-search" type="text">
                 </label>
-
-                <label for="" class="card__label-pickup">
-                  <input class="filter-style" type="radio" name="pickup" id="">Забрать сегодня
-                </label>
-                <label for="" class="card__label-pickup">
-                  <input class="filter-style" type="radio" name="pickup" checked>Забрать в течение недели
-                </label>
               </div>
+              <label for="" class="card__label-pickup">
+                <input class="filter-style" type="radio" name="pickup" id="">Забрать сегодня
+              </label>
+              <label for="" class="card__label-pickup">
+                <input class="filter-style" type="radio" name="pickup" checked>Забрать в течение недели
+              </label>
+              <ul class="card__list">
+
+                <li class="card__list-item card__list-itemtitle">
+                  <div class="card__list-address ">Адрес</div>
+                  <div class="card__list-workours ">Режим работы</div>
+                  <div class="card__list-available ">Доступно</div>
+                  <div class="card__list-num ">Количество</div>
+                  <div class="card__list-btn  "></div>
+                </li>
+
+                <li class="card__list-item">
+                  <div class="card__list-address">Москва, ул. Науки 25</div>
+                  <div class="card__list-workours">
+                    <div class="workhours">
+                      <span> пн-сб:</span>
+                      <span>08:00-19:00</span>
+                    </div>
+                    <div class="workhours">
+                      <span>вс:</span>
+                      <span> 09:00-17:00</span>
+                    </div>
+                  </div>
+                  <div class="card__list-available">В наличии</div>
+                  <div class="card__list-num">1</div>
+                  <div class="card__list-btn">
+                    <button type="submit">купить </button>
+                  </div>
+                </li>
+
+                <li class="card__list-item">
+                  <div class="card__list-address">Москва, ул. Южная 134</div>
+                  <div class="card__list-workours">
+                    <span>пн-сб: 08:00-19:00 </span>
+                    <span>вс: 09:00-17:00 </span>
+                  </div>
+                  <div class="card__list-available">В наличии</div>
+                  <div class="card__list-num">2</div>
+                  <div class="card__list-btn">
+                    <button type="submit">купить </button>
+                  </div>
+                </li>
+
+                <li class="card__list-item">
+                  <div class="card__list-address">Санкт-Петербург,
+                    <br>ул. Красная 19
+                  </div>
+                  <div class="card__list-workours">
+                    <span>пн-сб: 08:00-19:00 </span>
+                    <span>вс: 09:00-17:00 </span>
+                  </div>
+                  <div class="card__list-available">Нет в наличии</div>
+                  <div class="card__list-num">0</div>
+                  <div class="card__list-btn">
+                    <button type="submit">купить </button>
+                  </div>
+                </li>
+
+                <li class="card__list-item">
+                  <div class="card__list-address">Киев, ул Шевченко 167</div>
+                  <div class="card__list-workours">
+                    <span>пн-сб: 08:00-19:00 </span>
+                    <span>вс: 09:00-17:00 </span>
+                  </div>
+                  <div class="card__list-available">Нет в наличии </div>
+                  <div class="card__list-num">0</div>
+                  <div class="card__list-btn">
+                    <button type="submit">купить </button>
+                  </div>
+                </li>
+
+              </ul>
+            </form>
+            <!-- </div> -->
+            <!-- </div> -->
           </div>
-          <ul class="card__list">
 
-            <li class="card__list-item card__list-itemtitle">
-              <div class="card__list-address ">Адрес</div>
-              <div class="card__list-workours ">Режим работы</div>
-              <div class="card__list-available ">Доступно</div>
-              <div class="card__list-num ">Количество</div>
-              <div class="card__list-btn  "></div>
-            </li>
-
-            <li class="card__list-item">
-              <div class="card__list-address">Москва, ул. Науки 25</div>
-              <div class="card__list-workours">
-                <div class="workhours">
-                  <span> пн-сб:</span>
-                  <span>08:00-19:00</span>
-                </div>
-                <div class="workhours">
-                  <span>вс:</span>
-                  <span> 09:00-17:00</span>
-                </div>
-              </div>
-              <div class="card__list-available">В наличии</div>
-              <div class="card__list-num">1</div>
-              <div class="card__list-btn">
-                <button type="submit">купить </button>
-              </div>
-            </li>
-
-            <li class="card__list-item">
-              <div class="card__list-address">Москва, ул. Южная 134</div>
-              <div class="card__list-workours">
-                <span>пн-сб: 08:00-19:00 </span>
-                <span>вс: 09:00-17:00 </span>
-              </div>
-              <div class="card__list-available">В наличии</div>
-              <div class="card__list-num">2</div>
-              <div class="card__list-btn">
-                <button type="submit">купить </button>
-              </div>
-            </li>
-
-            <li class="card__list-item">
-              <div class="card__list-address">Санкт-Петербург,
-                <br>ул. Красная 19
-              </div>
-              <div class="card__list-workours">
-                <span>пн-сб: 08:00-19:00 </span>
-                <span>вс: 09:00-17:00 </span>
-              </div>
-              <div class="card__list-available">Нет в наличии</div>
-              <div class="card__list-num">0</div>
-              <div class="card__list-btn">
-                <button type="submit">купить </button>
-              </div>
-            </li>
-
-            <li class="card__list-item">
-              <div class="card__list-address">Киев, ул Шевченко 167</div>
-              <div class="card__list-workours">
-                <span>пн-сб: 08:00-19:00 </span>
-                <span>вс: 09:00-17:00 </span>
-              </div>
-              <div class="card__list-available">Нет в наличии </div>
-              <div class="card__list-num">0</div>
-              <div class="card__list-btn">
-                <button type="submit">купить </button>
-              </div>
-            </li>
-
-          </ul>
-          </form>
+          <div id="product-card__tabs-5" class="card__tab-content tabs__content ">content5</div>
+          <div id="product-card__tabs-6" class="card__tab-content tabs__content ">content6</div>
+          <div id="product-card__tabs-7" class="card__tab-content tabs__content ">content7</div>
         </div>
-        <div id="product-card__tabs-5" class="card__tab-content tabs__content "></div>
-        <div id="product-card__tabs-6" class="card__tab-content tabs__content ">content</div>
-        <div id="product-card__tabs-7" class="card__tab-content tabs__content ">content</div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -638,12 +638,10 @@
             <form action="" class="footer__form">
               <input class="footer__form-input" type="text" placeholder="Введите ваш e-mail:">
               <button class="footer__form-btn" type="submit">Отправить</button>
-
             </form>
-
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">Информация </h6>
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__topdrop ">Информация </h6>
             <ul class="footer__list">
               <li class="footer__list-item"><a href="#">О компании</a></li>
               <li class="footer__list-item"><a href="#">Контакты</a> </li>
@@ -652,7 +650,7 @@
             </ul>
           </div>
           <div class="footer__top-item">
-            <h6 class="footer__top-title">Интернет-магазин</h6>
+            <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
             <ul class="footer__list">
               <li class="footer__list-item"><a href="#" з>Доставка и самовыво</a></li>
               <li class="footer__list-item"><a href="#"> Оплата</a> </li>
@@ -695,7 +693,6 @@
       </div>
     </div>
   </footer>
-
   <!-- <script src="../node_modules/jquery-form-styler/dist/jquery.formstyler.min.js"></script> -->
   <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
   <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
