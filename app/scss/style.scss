@@ -1325,7 +1325,7 @@ button.catalog__filter-btnline {
 .card__tabs {
   margin-bottom: 100px;
 }
-.card__tabs-box {
+.card__tab-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1425,6 +1425,15 @@ button.catalog__filter-btnline {
 
 .product__slider .slick-dots .slick-active button {
   background-color: #1c62cd;
+}
+.product-card__btn-mobile{
+  display: none
+
+}
+
+.footer__topdrop{
+  pointer-events: none;
+
 }
 
 @import "media";

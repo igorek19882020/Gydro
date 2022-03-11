@@ -17,8 +17,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="jquery.rateyo.min.css"> -->
   <!-- <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css"> -->
+  <!-- <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.css"> -->
+
+  <!-- <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.css"> -->
+
+
+
+
+
+  <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css">
+
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
 
 
 </head>
@@ -29,9 +42,14 @@
       <div class="container">
         <div class="header__top-inner">
           <nav class="menu">
+            <button class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="">Магазины </a>
+                <a class="menu__link" href="">Магазины</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Акции</a>
@@ -76,6 +94,122 @@
 
       </div>
 
+    </div>
+    <div class="menu-mobile__list ">
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Войти</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Регистрация</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/heart.svg" alt="">
+          <p>Избранное</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/basket.svg" alt="">
+          <p>Корзина</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/house.svg" alt="">
+          <p>Магазины</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/percent.svg" alt="">
+          <p>Акции</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/box.svg" alt="">
+          <p>Доставка и оплата</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Квадроциклы</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Катера</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Гидроциклы</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Лодки</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Вездеходы</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Снегоходы</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Двигатели</p>
+        </a>
+      </li>
+
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="#">
+          <p>Запчасти</p>
+        </a>
+      </li>
+    </div>
+
+    <div class="menu__mobile-linewrapper">
+      <div class="menu__mobile-line">
+
+
+        <li class="menu__item">
+          <a class="menu__link" href="">Магазины</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Акции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Доставка и оплата</a>
+        </li>
+
+
+      </div>
     </div>
     <div class="header__bottom">
       <div class="container">
@@ -142,7 +276,7 @@
       </div>
     </div>
   </div>
-  
+
   <section class="product-card">
     <div class="container">
       <div class="product-card__inner">
@@ -153,6 +287,9 @@
           <p class="product-card__price-new">1 100 475 ₽
           </p>
           <a href="" class="product-card__link">Нашли дешевле? Снизим цену!</a>
+          <div class="product-card__btn product-card__btn-mobile">
+            <button>купить </button>
+          </div>
         </div>
         <div class="product-card__content">
           <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
@@ -177,6 +314,7 @@
             <a class="tab  product-card__tab tab-active" href="#product-1">Характеристики</a>
             <a class="tab  product-card__tab " href="#product-2">Наличие в магазине</a>
           </div>
+        </div>
           <div class="tabs__container">
             <div id=product-1 class=" tabs__content  product-card__tab-content tabs__content-active">
               <ul class="product-card__list">
@@ -202,35 +340,35 @@
                 </li>
               </ul>
               <a href="#" class="product-card__more">Показать еще</a>
-              <div class="product-card__btn"> <button>купить </button></div>
+              <div class="product-card__btn">
+                <button>купить </button>
+              </div>
             </div>
             <div id='product-2' class="tabs__content  product-card__tab-content">
               content-2
 
             </div>
           </div>
-        </div>
+        <!-- </div> -->
 
       </div>
 
     </div>
     </div>
   </section>
-  <section class="card__tabs">
-
+  <div class="card__tabs">
     <div class="container">
-
-      <div class="tabs__wrapper">
-
-        <div class="tabs card__tabs-box">
-          <a class="tab card__tab" href="product-card__tabs-1">О товаре</a>
-          <a class="tab card__tab" href="product-card__tabs-2">Характеристики</a>
-          <a class="tab card__tab" href="product-card__tabs-3">Отзывы </a>
-          <a class="tab card__tab tab-active" href="product-card__tabs-4">Самовывоз</a>
-          <a class="tab card__tab" href="product-card__tabs-5">Доставка</a>
-          <a class="tab card__tab" href="product-card__tabs-6">Cервис</a>
-          <a class="tab card__tab" href="product-card__tabs-7">Гарантия</a>
+      <div class="tabs__wrapper ">
+        <div class="tabs card__tab-box mobile-overflow">
+          <a class="tab card__tab" href="#product-card__tabs-1">О товаре</a>
+          <a class="tab card__tab" href="#product-card__tabs-2">Характеристики</a>
+          <a class="tab card__tab" href="#product-card__tabs-3">Отзывы </a>
+          <a class="tab card__tab tab-active" href="#product-card__tabs-4">Самовывоз</a>
+          <a class="tab card__tab" href="#product-card__tabs-5">Доставка</a>
+          <a class="tab card__tab" href="#product-card__tabs-6">Cервис</a>
+          <a class="tab card__tab" href="#product-card__tabs-7">Гарантия</a>
         </div>
+      </div>
 
         <div class="tabs__container">
           <div id="product-card__tabs-1" class="card__tab-content tabs__content">content1</div>
@@ -242,13 +380,15 @@
                 <label class="card__label-search" for="">Магазин
                   <input class="card__input-search" type="text">
                 </label>
+                <label for="" class="card__label-pickup">
+                  <input class="filter-style" type="radio" name="pickup" id="">Забрать сегодня
+                </label>
+                <label for="" class="card__label-pickup">
+                  <input class="filter-style" type="radio" name="pickup" checked>Забрать в течение недели
+                </label>
               </div>
-              <label for="" class="card__label-pickup">
-                <input class="filter-style" type="radio" name="pickup" id="">Забрать сегодня
-              </label>
-              <label for="" class="card__label-pickup">
-                <input class="filter-style" type="radio" name="pickup" checked>Забрать в течение недели
-              </label>
+
+
               <ul class="card__list">
 
                 <li class="card__list-item card__list-itemtitle">
@@ -321,32 +461,34 @@
 
               </ul>
             </form>
-            <!-- </div> -->
-            <!-- </div> -->
+
           </div>
 
           <div id="product-card__tabs-5" class="card__tab-content tabs__content ">content5</div>
           <div id="product-card__tabs-6" class="card__tab-content tabs__content ">content6</div>
           <div id="product-card__tabs-7" class="card__tab-content tabs__content ">content7</div>
+
         </div>
-      </div>
+      <!-- </div> -->
     </div>
-  </section>
 
-  <section class="products">
-    <div class="container">
-      <div class="products__inner">
-        <h3 class="products__title">С этим товаром покупают
-        </h3>
-        <div class="tabs__wrapper">
-          <div class="tabs products__tabs">
+    </section>
 
-            <a class="tab products__tab tab-active" href="#popular__tab-1">запчасти</a>
-            <a class="tab products__tab" href="#popular__tab-2">моторы</a>
-            <a class="tab products__tab" href="#popular__tab-3">шины </a>
-            <a class="tab products__tab" href="#popular__tab-4">электроника</a>
-            <a class="tab products__tab" href="#popular__tab-5">инструменты</a>
-            <a class="tab products__tab" href="#popular__tab-6">аксессуары </a>
+    <section class="products">
+      <div class="container">
+        <div class="products__inner">
+          <h3 class="products__title">С этим товаром покупают
+          </h3>
+          <div class="tabs__wrapper">
+            <div class="tabs products__tabы mobile-overflow">
+
+              <a class="tab products__tab tab-active" href="#popular__tab-1">запчасти</a>
+              <a class="tab products__tab" href="#popular__tab-2">моторы</a>
+              <a class="tab products__tab" href="#popular__tab-3">шины </a>
+              <a class="tab products__tab" href="#popular__tab-4">электроника</a>
+              <a class="tab products__tab" href="#popular__tab-5">инструменты</a>
+              <a class="tab products__tab" href="#popular__tab-6">аксессуары </a>
+            </div>
           </div>
           <div class="tabs__container products__container">
             <div id="popular__tab-1" class="tabs__content products__content tabs__content-active"></div>
@@ -624,89 +766,89 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+
+    </section>
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__top-inner">
-          <div class="footer__top-item footer__top-newslatter">
-            <h6 class="footer__top-title">Подпишитесь на нашу рассылку
-              и узнавайте о акциях быстрее</h6>
-            <form action="" class="footer__form">
-              <input class="footer__form-input" type="text" placeholder="Введите ваш e-mail:">
-              <button class="footer__form-btn" type="submit">Отправить</button>
-            </form>
-          </div>
-          <div class="footer__top-item footer__top-itemdrop">
-            <h6 class="footer__top-title footer__topdrop ">Информация </h6>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a href="#">О компании</a></li>
-              <li class="footer__list-item"><a href="#">Контакты</a> </li>
-              <li class="footer__list-item"><a href="#">Акции </a></li>
-              <li class="footer__list-item"><a href="#">Магазины</a></li>
-            </ul>
-          </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a href="#" з>Доставка и самовыво</a></li>
-              <li class="footer__list-item"><a href="#"> Оплата</a> </li>
-              <li class="footer__list-item"><a href="#"> Возврат-обмен</a></li>
-              <li class="footer__list-item"><a href="#">Новости</a></li>
-            </ul>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-inner">
+            <div class="footer__top-item footer__top-newslatter">
+              <h6 class="footer__top-title">Подпишитесь на нашу рассылку
+                и узнавайте о акциях быстрее</h6>
+              <form action="" class="footer__form">
+                <input class="footer__form-input" type="text" placeholder="Введите ваш e-mail:">
+                <button class="footer__form-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+            <div class="footer__top-item footer__top-itemdrop">
+              <h6 class="footer__top-title footer__topdrop ">Информация </h6>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">О компании</a></li>
+                <li class="footer__list-item"><a href="#">Контакты</a> </li>
+                <li class="footer__list-item"><a href="#">Акции </a></li>
+                <li class="footer__list-item"><a href="#">Магазины</a></li>
+              </ul>
+            </div>
+            <div class="footer__top-item">
+              <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" з>Доставка и самовыво</a></li>
+                <li class="footer__list-item"><a href="#"> Оплата</a> </li>
+                <li class="footer__list-item"><a href="#"> Возврат-обмен</a></li>
+                <li class="footer__list-item"><a href="#">Новости</a></li>
+              </ul>
 
 
 
-          </div>
-          <div class="footer__top-item footer__top-social">
-            <ul class="social__list">
-              <li class="social__list-item">
-                <a href="#">
-                  <img src="images/instagram.svg" alt="">
-                </a>
-              </li>
-              <li class="social__list-item">
-                <a href="#">
-                  <img src="images/vkontakte.svg" alt="">
-                </a>
-              </li>
-              <li class="social__list-item">
-                <a href="#">
-                  <img src="images/facebook.svg" alt="">
-                </a>
-              </li>
-              <li class="social__list-item">
-                <a href="#">
-                  <img src="images/youtube.svg" alt="">
-                </a>
-              </li>
-            </ul>
+            </div>
+            <div class="footer__top-item footer__top-social">
+              <ul class="social__list">
+                <li class="social__list-item">
+                  <a href="#">
+                    <img src="images/instagram.svg" alt="">
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img src="images/vkontakte.svg" alt="">
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img src="images/facebook.svg" alt="">
+                  </a>
+                </li>
+                <li class="social__list-item">
+                  <a href="#">
+                    <img src="images/youtube.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="">Договор оферты</a>
+          <a class="footer__bottom-link" href="">Политика обработки персональных данных</a>
+        </div>
       </div>
-      <div class="footer__bottom">
-        <a class="footer__bottom-link" href="">Договор оферты</a>
-        <a class="footer__bottom-link" href="">Политика обработки персональных данных</a>
-      </div>
-    </div>
-  </footer>
-  <!-- <script src="../node_modules/jquery-form-styler/dist/jquery.formstyler.min.js"></script> -->
-  <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
-  <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.min.rateyo.js"></script>  -->
-  <!-- <script src="../app/js/rateyo.min.js"></script> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script> -->
-  <script src="../node_modules/jquery-form-styler/dist/jquery.formstyler.js"></script>
-  <!-- <script src="../node_modules/rateyo/min/jquery.rateyo.min.js" ></script> -->
-  <!-- <script type="text/javascript" src="jquery.min.js"></script>
+    </footer>
+    <!-- <script src="../node_modules/jquery-form-styler/dist/jquery.formstyler.min.js"></script> -->
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="../node_modules/jquery/dist/jquery.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.min.rateyo.js"></script>  -->
+    <!-- <script src="../app/js/rateyo.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script> -->
+    <script src="../node_modules/jquery-form-styler/dist/jquery.formstyler.js"></script>
+    <!-- <script src="../node_modules/rateyo/min/jquery.rateyo.min.js" ></script> -->
+    <!-- <script type="text/javascript" src="jquery.min.js"></script>
  <script type="text/javascript" src="jquery.rateyo.min.js"></script> -->
 
-  <!-- <script type="text/javascript" src="../node_modules/rateyo/src/jquery.rateyo.js"></script> -->
-  <script type="text/javascript" src="js/main.min.js"></script>
+    <!-- <script type="text/javascript" src="../node_modules/rateyo/src/jquery.rateyo.js"></script> -->
+    <script type="text/javascript" src="js/main.min.js"></script>
 
 
 
