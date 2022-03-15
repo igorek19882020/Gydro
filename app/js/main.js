@@ -74,9 +74,9 @@ $(function () {
       },
     ],
   });
-
+  
   $(".filter-style").styler();
-
+  
   $(".filter__item-drop, .filter__extra").on("click", function () {
     $(this).toggleClass("filter__item-drop--active");
     $(this).next().slideToggle(200);
@@ -99,7 +99,7 @@ $(function () {
     $(".catalog__filter-btngrid").removeClass("catalog__filter-button--active");
     $(".product__item-wrapper").addClass("product__item-wrapper--list");
   });
-
+  
   $(".rateYo").rateYo({
     rating: 3.6,
     spacing: "7px",
@@ -114,7 +114,7 @@ $(function () {
     $(this).next().slideToggle();
     $(this).toggleClass("footer__topdrop-active");
   });
-
+  
   $(".aside__btn").on("click", function () {
     $(this).next().slideToggle();
     e.preventDefault;

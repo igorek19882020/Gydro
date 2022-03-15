@@ -182,7 +182,7 @@
   background-color: transparent;
   cursor: pointer;
 }
-.slick-dots .slick-active button{
+.slick-dots .slick-active button {
   background-color: white;
 }
 .slick-active li button {
@@ -215,7 +215,7 @@
   text-align: right;
 }
 
-.aside__btn{
+.aside__btn {
   display: none;
 }
 .price {
@@ -755,12 +755,25 @@
   display: flex;
   align-items: center;
 }
+
 .catalog__filter-btn button {
   background-color: transparent;
   border: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
+}
+.jq-selectbox select,
+.jq-select-multiple select {
+  position: absolute;
+  top: 0;
+  display: none;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
 }
 .catalog__filter-btn button + button {
   margin-left: 10px;
@@ -787,6 +800,12 @@ button.catalog__filter-btnline {
 }
 .catalog__filter-button--active {
   opacity: 1;
+}
+.jqselect .jq-selectbox__dropdown {
+  border-radius: 0px;
+  padding-top: 15px;
+  position: absolute;
+  left: 0px;
 }
 .catalog__inner {
   display: flex;
@@ -927,6 +946,18 @@ button.catalog__filter-btnline {
   transform: rotate(0);
   background-image: url("../images/checked-icon.svg");
   background-position: center center;
+}
+.jq-radio.checked {
+  background: #1c62cd;
+  background-position: center center;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/checked-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.jq-radio__div {
+  display: none;
 }
 .aside-filter__content.aside-filter__tabs-content-radio {
   flex-wrap: nowrap;
@@ -1426,14 +1457,12 @@ button.catalog__filter-btnline {
 .product__slider .slick-dots .slick-active button {
   background-color: #1c62cd;
 }
-.product-card__btn-mobile{
-  display: none
-
+.product-card__btn-mobile {
+  display: none;
 }
 
-.footer__topdrop{
+.footer__topdrop {
   pointer-events: none;
-
 }
 
 @import "media";
