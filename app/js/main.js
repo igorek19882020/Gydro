@@ -27,6 +27,7 @@ $(function () {
 
     $($(this).attr("href")).addClass("tabs__content-active");
     $(".product__slider").slick("setPosition");
+    
   });
 
   $(".product__item-favourite").on("click", function () {
